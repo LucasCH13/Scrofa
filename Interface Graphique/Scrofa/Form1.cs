@@ -107,7 +107,7 @@ namespace Scrofa
         private void button_Annuler_Click(object sender, EventArgs e)
         {
 
-           DialogResult Result = MessageBox.Show("etes vous sur de vouloir quitter ? ", "Attention !", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+           DialogResult Result = MessageBox.Show("Êtes vous sûr de vouloir quitter ? ", "Attention !", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
             
 
             if(Result == DialogResult.Yes)
