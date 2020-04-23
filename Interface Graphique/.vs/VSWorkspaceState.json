@@ -1,8 +1,11 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Scrofa"
+    "\\Scrofa",
+    "\\Scrofa\\bin",
+    "\\Scrofa\\obj",
+    "\\Scrofa\\Properties"
   ],
-  "SelectedNode": "\\Scrofa\\Form1.cs",
+  "SelectedNode": "\\Scrofa",
   "PreviewInSolutionExplorer": false
 }
