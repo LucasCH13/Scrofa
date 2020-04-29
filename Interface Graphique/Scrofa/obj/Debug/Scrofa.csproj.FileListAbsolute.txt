@@ -16,14 +16,3 @@ C:\Users\Phil\Desktop\Developpement\Arduino\Scrofa\Scrofa\obj\Debug\Scrofa.Prope
 C:\Users\Phil\Desktop\Developpement\Arduino\Scrofa\Scrofa\obj\Debug\Scrofa.csproj.GenerateResource.cache
 C:\Users\Phil\Desktop\Developpement\Arduino\Scrofa\Scrofa\obj\Debug\Scrofa.exe
 C:\Users\Phil\Desktop\Developpement\Arduino\Scrofa\Scrofa\obj\Debug\Scrofa.pdb
-C:\dev\Scrofa-1\Interface Graphique\Scrofa\bin\Debug\Scrofa.exe.config
-C:\dev\Scrofa-1\Interface Graphique\Scrofa\bin\Debug\Scrofa.exe
-C:\dev\Scrofa-1\Interface Graphique\Scrofa\bin\Debug\Scrofa.pdb
-C:\dev\Scrofa-1\Interface Graphique\Scrofa\obj\Debug\Scrofa.csprojAssemblyReference.cache
-C:\dev\Scrofa-1\Interface Graphique\Scrofa\obj\Debug\Scrofa.Form1.resources
-C:\dev\Scrofa-1\Interface Graphique\Scrofa\obj\Debug\Scrofa.Properties.Resources.resources
-C:\dev\Scrofa-1\Interface Graphique\Scrofa\obj\Debug\Scrofa.csproj.GenerateResource.cache
-C:\dev\Scrofa-1\Interface Graphique\Scrofa\obj\Debug\Scrofa.csproj.CoreCompileInputs.cache
-C:\dev\Scrofa-1\Interface Graphique\Scrofa\obj\Debug\Scrofa.exe
-C:\dev\Scrofa-1\Interface Graphique\Scrofa\obj\Debug\Scrofa.pdb
-C:\dev\Scrofa-1\Interface Graphique\Scrofa\obj\Debug\Scrofa.Form2.resources
