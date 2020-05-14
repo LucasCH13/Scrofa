@@ -3,9 +3,10 @@
     "",
     "\\Scrofa",
     "\\Scrofa\\bin",
+    "\\Scrofa\\bin\\Debug",
     "\\Scrofa\\obj",
     "\\Scrofa\\Properties"
   ],
-  "SelectedNode": "\\Scrofa\\Program.cs",
+  "SelectedNode": "\\Scrofa\\Form3.Designer.cs",
   "PreviewInSolutionExplorer": false
 }
