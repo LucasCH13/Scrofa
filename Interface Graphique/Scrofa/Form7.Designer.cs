@@ -87,6 +87,7 @@
             this.dureeAllumage = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.button1 = new System.Windows.Forms.Button();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox8.SuspendLayout();
@@ -99,13 +100,10 @@
             // 
             // annulerBtn
             // 
-            this.annulerBtn.Location = new System.Drawing.Point(398, 572);
-            this.annulerBtn.Margin = new System.Windows.Forms.Padding(2);
+            this.annulerBtn.Location = new System.Drawing.Point(0, 0);
             this.annulerBtn.Name = "annulerBtn";
-            this.annulerBtn.Size = new System.Drawing.Size(56, 19);
-            this.annulerBtn.TabIndex = 8;
-            this.annulerBtn.Text = "Annuler";
-            this.annulerBtn.UseVisualStyleBackColor = true;
+            this.annulerBtn.Size = new System.Drawing.Size(75, 23);
+            this.annulerBtn.TabIndex = 0;
             // 
             // okBtn
             // 
@@ -732,11 +730,22 @@
             this.radioButton1.Text = "Paramètrage standard";
             this.radioButton1.UseVisualStyleBackColor = true;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(521, 567);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 8;
+            this.button1.Text = "Cancel";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Form7
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(799, 612);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.annulerBtn);
             this.Controls.Add(this.okBtn);
             this.Controls.Add(this.groupBox3);
@@ -823,5 +832,6 @@
         private System.Windows.Forms.Label dureeAllumage;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.Button button1;
     }
 }

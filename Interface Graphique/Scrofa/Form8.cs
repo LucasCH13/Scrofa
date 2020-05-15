@@ -18,19 +18,7 @@ namespace Scrofa
         {
             InitializeComponent();
         }
-        /*
-         * Choisir le port de la carte arduino 
-         */
-        private void comboBox1 (object sender, EventArgs e)
-        {
-            String[] ports = SerialPort.GetPortNames();
-
-           comboBox_1.SelectedText = "    ";
-           comboBox_1.Items.Clear();
-           comboBox_1.Items.AddRange(ports);
-        }
-
-       
+        
         /*
          * Choisir la section 
          */
@@ -75,6 +63,17 @@ namespace Scrofa
                     f4.Show();
                     break;
             }
+        }
+        /*
+         * Choisir le port de la carte arduino
+         */
+        private void comboBox_1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            String[] ports = SerialPort.GetPortNames();
+
+            comboBox_1.SelectedText = "    ";
+            comboBox_1.Items.Clear();
+            comboBox_1.Items.AddRange(ports);
         }
     }
 }

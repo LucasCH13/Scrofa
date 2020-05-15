@@ -130,6 +130,7 @@
             this.comboBox_1.Name = "comboBox_1";
             this.comboBox_1.Size = new System.Drawing.Size(150, 28);
             this.comboBox_1.TabIndex = 1;
+            this.comboBox_1.SelectedIndexChanged += new System.EventHandler(this.comboBox_1_SelectedIndexChanged);
             // 
             // labelModuleLocal
             // 
