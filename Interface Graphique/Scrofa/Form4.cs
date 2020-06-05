@@ -33,5 +33,10 @@ namespace Scrofa
             Form8 f8 = new Form8();
             f8.Show();
         }
+
+        private void Form4_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -1036,6 +1036,7 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "Form4";
             this.Text = "302. Module Transmission calendrier";
+            this.Load += new System.EventHandler(this.Form4_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
