@@ -61,10 +61,10 @@
             this.groupBoxModule.Controls.Add(this.groupBoxModule2);
             this.groupBoxModule.Controls.Add(this.comboBox_1);
             this.groupBoxModule.Controls.Add(this.labelModuleLocal);
-            this.groupBoxModule.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBoxModule.Location = new System.Drawing.Point(22, 165);
+            this.groupBoxModule.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBoxModule.Location = new System.Drawing.Point(22, 135);
             this.groupBoxModule.Name = "groupBoxModule";
-            this.groupBoxModule.Size = new System.Drawing.Size(745, 253);
+            this.groupBoxModule.Size = new System.Drawing.Size(745, 283);
             this.groupBoxModule.TabIndex = 6;
             this.groupBoxModule.TabStop = false;
             this.groupBoxModule.Text = "Communiquer avec/via un module qui est connecté à cet ordinateur";
@@ -84,6 +84,7 @@
             // 
             // button4
             // 
+            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.Location = new System.Drawing.Point(399, 98);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(205, 23);
@@ -93,6 +94,7 @@
             // 
             // button3
             // 
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.Location = new System.Drawing.Point(106, 98);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(181, 23);
@@ -102,6 +104,7 @@
             // 
             // button2
             // 
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.Location = new System.Drawing.Point(399, 43);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(205, 23);
@@ -111,6 +114,7 @@
             // 
             // button1
             // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(106, 43);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(181, 23);
@@ -135,6 +139,7 @@
             // labelModuleLocal
             // 
             this.labelModuleLocal.AutoSize = true;
+            this.labelModuleLocal.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelModuleLocal.Location = new System.Drawing.Point(210, 44);
             this.labelModuleLocal.Name = "labelModuleLocal";
             this.labelModuleLocal.Size = new System.Drawing.Size(127, 13);
@@ -146,6 +151,7 @@
             this.groupBoxDisque.BackColor = System.Drawing.SystemColors.Menu;
             this.groupBoxDisque.Controls.Add(this.ecrireDisque);
             this.groupBoxDisque.Controls.Add(this.lireDisque);
+            this.groupBoxDisque.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBoxDisque.ForeColor = System.Drawing.SystemColors.ControlText;
             this.groupBoxDisque.Location = new System.Drawing.Point(22, 29);
             this.groupBoxDisque.Name = "groupBoxDisque";
@@ -156,6 +162,7 @@
             // 
             // ecrireDisque
             // 
+            this.ecrireDisque.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ecrireDisque.Location = new System.Drawing.Point(390, 46);
             this.ecrireDisque.Name = "ecrireDisque";
             this.ecrireDisque.Size = new System.Drawing.Size(315, 23);
@@ -165,6 +172,7 @@
             // 
             // lireDisque
             // 
+            this.lireDisque.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lireDisque.Location = new System.Drawing.Point(39, 46);
             this.lireDisque.Name = "lireDisque";
             this.lireDisque.Size = new System.Drawing.Size(315, 23);
@@ -198,6 +206,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.groupBoxModule);
             this.Controls.Add(this.groupBoxDisque);
+            this.Font = new System.Drawing.Font("Malgun Gothic Semilight", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "Form8";
             this.Text = "Scrofa Loc V2";
             this.groupBoxModule.ResumeLayout(false);

@@ -28,13 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.okBtn = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.textBox19 = new System.Windows.Forms.TextBox();
+            this.okBtn = new System.Windows.Forms.Button();
             this.periode = new System.Windows.Forms.Label();
             this.accelerometre = new System.Windows.Forms.RadioButton();
             this.temperature = new System.Windows.Forms.RadioButton();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
             this.textBox18 = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
@@ -71,7 +73,6 @@
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.dateDebut = new System.Windows.Forms.Label();
             this.regleCyclique = new System.Windows.Forms.RadioButton();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.poucent = new System.Windows.Forms.Label();
             this.tempsAllumage = new System.Windows.Forms.Label();
@@ -86,90 +87,40 @@
             this.dureeAllumage = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.button1 = new System.Windows.Forms.Button();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.groupBox8.SuspendLayout();
             this.groupBox7.SuspendLayout();
             this.groupBox6.SuspendLayout();
-            this.groupBox1.SuspendLayout();
             this.groupBox5.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.SuspendLayout();
             // 
-            // okBtn
-            // 
-            this.okBtn.Location = new System.Drawing.Point(725, 681);
-            this.okBtn.Margin = new System.Windows.Forms.Padding(2);
-            this.okBtn.Name = "okBtn";
-            this.okBtn.Size = new System.Drawing.Size(76, 23);
-            this.okBtn.TabIndex = 7;
-            this.okBtn.Text = "OK";
-            this.okBtn.UseVisualStyleBackColor = true;
-            // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.button1);
             this.groupBox3.Controls.Add(this.textBox19);
+            this.groupBox3.Controls.Add(this.okBtn);
             this.groupBox3.Controls.Add(this.periode);
             this.groupBox3.Controls.Add(this.accelerometre);
             this.groupBox3.Controls.Add(this.temperature);
+            this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox3.Location = new System.Drawing.Point(11, 594);
             this.groupBox3.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox3.Size = new System.Drawing.Size(935, 82);
+            this.groupBox3.Size = new System.Drawing.Size(935, 123);
             this.groupBox3.TabIndex = 5;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Autres capteurs basés le calendrier du GPS";
-            // 
-            // textBox19
-            // 
-            this.textBox19.Location = new System.Drawing.Point(546, 27);
-            this.textBox19.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox19.Name = "textBox19";
-            this.textBox19.Size = new System.Drawing.Size(76, 20);
-            this.textBox19.TabIndex = 20;
-            // 
-            // periode
-            // 
-            this.periode.AutoSize = true;
-            this.periode.Location = new System.Drawing.Point(496, 29);
-            this.periode.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.periode.Name = "periode";
-            this.periode.Size = new System.Drawing.Size(49, 13);
-            this.periode.TabIndex = 19;
-            this.periode.Text = "Période :";
-            // 
-            // accelerometre
-            // 
-            this.accelerometre.AutoSize = true;
-            this.accelerometre.Location = new System.Drawing.Point(262, 27);
-            this.accelerometre.Margin = new System.Windows.Forms.Padding(2);
-            this.accelerometre.Name = "accelerometre";
-            this.accelerometre.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.accelerometre.Size = new System.Drawing.Size(93, 17);
-            this.accelerometre.TabIndex = 6;
-            this.accelerometre.TabStop = true;
-            this.accelerometre.Text = "Accéléromètre";
-            this.accelerometre.UseVisualStyleBackColor = true;
-            // 
-            // temperature
-            // 
-            this.temperature.AutoSize = true;
-            this.temperature.Location = new System.Drawing.Point(77, 27);
-            this.temperature.Margin = new System.Windows.Forms.Padding(2);
-            this.temperature.Name = "temperature";
-            this.temperature.Size = new System.Drawing.Size(85, 17);
-            this.temperature.TabIndex = 5;
-            this.temperature.TabStop = true;
-            this.temperature.Text = "Température";
-            this.temperature.UseVisualStyleBackColor = true;
             // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.groupBox8);
             this.groupBox2.Controls.Add(this.groupBox7);
             this.groupBox2.Controls.Add(this.groupBox6);
+            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.Location = new System.Drawing.Point(11, 215);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox2.Name = "groupBox2";
@@ -178,6 +129,88 @@
             this.groupBox2.TabIndex = 6;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Calendrier du GPS";
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.groupBox5);
+            this.groupBox1.Controls.Add(this.groupBox4);
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Location = new System.Drawing.Point(11, 11);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
+            this.groupBox1.Size = new System.Drawing.Size(935, 191);
+            this.groupBox1.TabIndex = 4;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Paramètrage du GPS";
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(784, 96);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(98, 23);
+            this.button1.TabIndex = 24;
+            this.button1.Text = "Cancel";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // textBox19
+            // 
+            this.textBox19.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox19.Location = new System.Drawing.Point(319, 79);
+            this.textBox19.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox19.Name = "textBox19";
+            this.textBox19.Size = new System.Drawing.Size(76, 20);
+            this.textBox19.TabIndex = 26;
+            // 
+            // okBtn
+            // 
+            this.okBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.okBtn.Location = new System.Drawing.Point(668, 96);
+            this.okBtn.Margin = new System.Windows.Forms.Padding(2);
+            this.okBtn.Name = "okBtn";
+            this.okBtn.Size = new System.Drawing.Size(97, 23);
+            this.okBtn.TabIndex = 23;
+            this.okBtn.Text = "OK";
+            this.okBtn.UseVisualStyleBackColor = true;
+            // 
+            // periode
+            // 
+            this.periode.AutoSize = true;
+            this.periode.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.periode.Location = new System.Drawing.Point(269, 81);
+            this.periode.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.periode.Name = "periode";
+            this.periode.Size = new System.Drawing.Size(49, 13);
+            this.periode.TabIndex = 25;
+            this.periode.Text = "Période :";
+            // 
+            // accelerometre
+            // 
+            this.accelerometre.AutoSize = true;
+            this.accelerometre.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.accelerometre.Location = new System.Drawing.Point(272, 24);
+            this.accelerometre.Margin = new System.Windows.Forms.Padding(2);
+            this.accelerometre.Name = "accelerometre";
+            this.accelerometre.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.accelerometre.Size = new System.Drawing.Size(93, 17);
+            this.accelerometre.TabIndex = 22;
+            this.accelerometre.TabStop = true;
+            this.accelerometre.Text = "Accéléromètre";
+            this.accelerometre.UseVisualStyleBackColor = true;
+            // 
+            // temperature
+            // 
+            this.temperature.AutoSize = true;
+            this.temperature.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.temperature.Location = new System.Drawing.Point(65, 24);
+            this.temperature.Margin = new System.Windows.Forms.Padding(2);
+            this.temperature.Name = "temperature";
+            this.temperature.Size = new System.Drawing.Size(85, 17);
+            this.temperature.TabIndex = 21;
+            this.temperature.TabStop = true;
+            this.temperature.Text = "Température";
+            this.temperature.UseVisualStyleBackColor = true;
             // 
             // groupBox8
             // 
@@ -192,12 +225,13 @@
             this.groupBox8.Controls.Add(this.textBox14);
             this.groupBox8.Controls.Add(this.dateDebut3);
             this.groupBox8.Controls.Add(this.regleReconduction);
-            this.groupBox8.Location = new System.Drawing.Point(668, 26);
+            this.groupBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox8.Location = new System.Drawing.Point(675, 76);
             this.groupBox8.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox8.Name = "groupBox8";
             this.groupBox8.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox8.Size = new System.Drawing.Size(237, 222);
-            this.groupBox8.TabIndex = 7;
+            this.groupBox8.TabIndex = 10;
             this.groupBox8.TabStop = false;
             // 
             // textBox18
@@ -315,12 +349,13 @@
             this.groupBox7.Controls.Add(this.textBox9);
             this.groupBox7.Controls.Add(this.dateDebut2);
             this.groupBox7.Controls.Add(this.regleDiscrete);
-            this.groupBox7.Location = new System.Drawing.Point(339, 26);
+            this.groupBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox7.Location = new System.Drawing.Point(346, 76);
             this.groupBox7.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox7.Name = "groupBox7";
             this.groupBox7.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox7.Size = new System.Drawing.Size(236, 222);
-            this.groupBox7.TabIndex = 6;
+            this.groupBox7.TabIndex = 9;
             this.groupBox7.TabStop = false;
             // 
             // comboBox1
@@ -446,12 +481,13 @@
             this.groupBox6.Controls.Add(this.textBox4);
             this.groupBox6.Controls.Add(this.dateDebut);
             this.groupBox6.Controls.Add(this.regleCyclique);
-            this.groupBox6.Location = new System.Drawing.Point(15, 26);
+            this.groupBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox6.Location = new System.Drawing.Point(22, 76);
             this.groupBox6.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox6.Name = "groupBox6";
             this.groupBox6.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox6.Size = new System.Drawing.Size(227, 220);
-            this.groupBox6.TabIndex = 5;
+            this.groupBox6.TabIndex = 8;
             this.groupBox6.TabStop = false;
             // 
             // heureFin
@@ -556,19 +592,6 @@
             this.regleCyclique.Text = "Règle cyclique";
             this.regleCyclique.UseVisualStyleBackColor = true;
             // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.groupBox5);
-            this.groupBox1.Controls.Add(this.groupBox4);
-            this.groupBox1.Location = new System.Drawing.Point(11, 11);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox1.Size = new System.Drawing.Size(935, 191);
-            this.groupBox1.TabIndex = 4;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Paramètrage du GPS";
-            // 
             // groupBox5
             // 
             this.groupBox5.Controls.Add(this.poucent);
@@ -580,12 +603,13 @@
             this.groupBox5.Controls.Add(this.textBox3);
             this.groupBox5.Controls.Add(this.textBox2);
             this.groupBox5.Controls.Add(this.radioButton2);
-            this.groupBox5.Location = new System.Drawing.Point(473, 35);
+            this.groupBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox5.Location = new System.Drawing.Point(389, 32);
             this.groupBox5.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox5.Size = new System.Drawing.Size(432, 127);
-            this.groupBox5.TabIndex = 3;
+            this.groupBox5.Size = new System.Drawing.Size(518, 127);
+            this.groupBox5.TabIndex = 5;
             this.groupBox5.TabStop = false;
             // 
             // poucent
@@ -682,12 +706,13 @@
             this.groupBox4.Controls.Add(this.dureeAllumage);
             this.groupBox4.Controls.Add(this.textBox1);
             this.groupBox4.Controls.Add(this.radioButton1);
-            this.groupBox4.Location = new System.Drawing.Point(32, 35);
+            this.groupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox4.Location = new System.Drawing.Point(27, 32);
             this.groupBox4.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox4.Size = new System.Drawing.Size(283, 127);
-            this.groupBox4.TabIndex = 2;
+            this.groupBox4.TabIndex = 4;
             this.groupBox4.TabStop = false;
             // 
             // dureeAllumage
@@ -722,23 +747,11 @@
             this.radioButton1.Text = "Paramètrage standard";
             this.radioButton1.UseVisualStyleBackColor = true;
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(827, 681);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 8;
-            this.button1.Text = "Cancel";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // Form7
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(957, 728);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.okBtn);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
@@ -747,13 +760,13 @@
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             this.groupBox2.ResumeLayout(false);
+            this.groupBox1.ResumeLayout(false);
             this.groupBox8.ResumeLayout(false);
             this.groupBox8.PerformLayout();
             this.groupBox7.ResumeLayout(false);
             this.groupBox7.PerformLayout();
             this.groupBox6.ResumeLayout(false);
             this.groupBox6.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
             this.groupBox4.ResumeLayout(false);
@@ -763,13 +776,15 @@
         }
 
         #endregion
-        private System.Windows.Forms.Button okBtn;
         private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox textBox19;
+        private System.Windows.Forms.Button okBtn;
         private System.Windows.Forms.Label periode;
         private System.Windows.Forms.RadioButton accelerometre;
         private System.Windows.Forms.RadioButton temperature;
-        private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.GroupBox groupBox8;
         private System.Windows.Forms.TextBox textBox18;
         private System.Windows.Forms.Label label15;
@@ -806,7 +821,6 @@
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Label dateDebut;
         private System.Windows.Forms.RadioButton regleCyclique;
-        private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.Label poucent;
         private System.Windows.Forms.Label tempsAllumage;
@@ -821,6 +835,5 @@
         private System.Windows.Forms.Label dureeAllumage;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.Button button1;
     }
 }
