@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.annulerBtn = new System.Windows.Forms.Button();
             this.okBtn = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.textBox19 = new System.Windows.Forms.TextBox();
@@ -98,19 +97,12 @@
             this.groupBox4.SuspendLayout();
             this.SuspendLayout();
             // 
-            // annulerBtn
-            // 
-            this.annulerBtn.Location = new System.Drawing.Point(0, 0);
-            this.annulerBtn.Name = "annulerBtn";
-            this.annulerBtn.Size = new System.Drawing.Size(75, 23);
-            this.annulerBtn.TabIndex = 0;
-            // 
             // okBtn
             // 
-            this.okBtn.Location = new System.Drawing.Point(168, 572);
+            this.okBtn.Location = new System.Drawing.Point(725, 681);
             this.okBtn.Margin = new System.Windows.Forms.Padding(2);
             this.okBtn.Name = "okBtn";
-            this.okBtn.Size = new System.Drawing.Size(56, 19);
+            this.okBtn.Size = new System.Drawing.Size(76, 23);
             this.okBtn.TabIndex = 7;
             this.okBtn.Text = "OK";
             this.okBtn.UseVisualStyleBackColor = true;
@@ -121,11 +113,11 @@
             this.groupBox3.Controls.Add(this.periode);
             this.groupBox3.Controls.Add(this.accelerometre);
             this.groupBox3.Controls.Add(this.temperature);
-            this.groupBox3.Location = new System.Drawing.Point(11, 484);
+            this.groupBox3.Location = new System.Drawing.Point(11, 594);
             this.groupBox3.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox3.Size = new System.Drawing.Size(748, 65);
+            this.groupBox3.Size = new System.Drawing.Size(935, 82);
             this.groupBox3.TabIndex = 5;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Autres capteurs basés le calendrier du GPS";
@@ -182,7 +174,7 @@
             this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox2.Size = new System.Drawing.Size(748, 265);
+            this.groupBox2.Size = new System.Drawing.Size(935, 375);
             this.groupBox2.TabIndex = 6;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Calendrier du GPS";
@@ -200,7 +192,7 @@
             this.groupBox8.Controls.Add(this.textBox14);
             this.groupBox8.Controls.Add(this.dateDebut3);
             this.groupBox8.Controls.Add(this.regleReconduction);
-            this.groupBox8.Location = new System.Drawing.Point(494, 24);
+            this.groupBox8.Location = new System.Drawing.Point(668, 26);
             this.groupBox8.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox8.Name = "groupBox8";
             this.groupBox8.Padding = new System.Windows.Forms.Padding(2);
@@ -323,7 +315,7 @@
             this.groupBox7.Controls.Add(this.textBox9);
             this.groupBox7.Controls.Add(this.dateDebut2);
             this.groupBox7.Controls.Add(this.regleDiscrete);
-            this.groupBox7.Location = new System.Drawing.Point(251, 24);
+            this.groupBox7.Location = new System.Drawing.Point(339, 26);
             this.groupBox7.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox7.Name = "groupBox7";
             this.groupBox7.Padding = new System.Windows.Forms.Padding(2);
@@ -572,7 +564,7 @@
             this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox1.Size = new System.Drawing.Size(748, 191);
+            this.groupBox1.Size = new System.Drawing.Size(935, 191);
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Paramètrage du GPS";
@@ -588,7 +580,7 @@
             this.groupBox5.Controls.Add(this.textBox3);
             this.groupBox5.Controls.Add(this.textBox2);
             this.groupBox5.Controls.Add(this.radioButton2);
-            this.groupBox5.Location = new System.Drawing.Point(299, 35);
+            this.groupBox5.Location = new System.Drawing.Point(473, 35);
             this.groupBox5.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.Padding = new System.Windows.Forms.Padding(2);
@@ -690,11 +682,11 @@
             this.groupBox4.Controls.Add(this.dureeAllumage);
             this.groupBox4.Controls.Add(this.textBox1);
             this.groupBox4.Controls.Add(this.radioButton1);
-            this.groupBox4.Location = new System.Drawing.Point(24, 35);
+            this.groupBox4.Location = new System.Drawing.Point(32, 35);
             this.groupBox4.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox4.Size = new System.Drawing.Size(249, 127);
+            this.groupBox4.Size = new System.Drawing.Size(283, 127);
             this.groupBox4.TabIndex = 2;
             this.groupBox4.TabStop = false;
             // 
@@ -732,7 +724,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(521, 567);
+            this.button1.Location = new System.Drawing.Point(827, 681);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 8;
@@ -746,7 +738,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(957, 728);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.annulerBtn);
             this.Controls.Add(this.okBtn);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
@@ -772,8 +763,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button annulerBtn;
         private System.Windows.Forms.Button okBtn;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.TextBox textBox19;
