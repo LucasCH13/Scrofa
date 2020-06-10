@@ -1,0 +1,118 @@
+/*
+ * Panic Button!
+ * A way to silently alert authorities or someone who can   help with your GPS location.
+ 
+  Created 20-11-2017
+  By Deon P.
+
+  The tutorial can be found at:
+  http://www.sensingthecity.com
+ 
+ */
+ 
+#include "Adafruit_FONA.h"
+#include <stdlib.h>
+#include <avr/dtostrf.h>
+//#include <SoftwareSerial.h>
+#define FONA_RX 2
+#define FONA_TX 3
+#define FONA_RST 4
+
+//#include <SoftwareSerial.h>
+//SoftwareSerial fonaSS = SoftwareSerial(FONA_TX, FONA_RX);
+//SoftwareSerial *fonaSerial = &fonaSS;
+
+// Use this for FONA 800 and 808s
+Adafruit_FONA fona = Adafruit_FONA(FONA_RST);
+ HardwareSerial *fonaSerial = &Serial1;
+
+//for replies later
+char replybuffer[255];
+uint8_t readline(char *buff, uint8_t maxbuff, uint16_t timeout = 0);
+uint8_t type;
+
+void setup() {
+      while (! Serial);
+      Serial.begin(115200);
+      Serial.println(F("Initializing FONA... (May take a few seconds)"));
+
+      fonaSerial->begin(4800);
+      if (! fona.begin(*fonaSerial)) {
+        Serial.println(F("Couldn't find FONA"));
+        while(1);
+      }
+      Serial.println(F("FONA is OK"));
+      // Try to enable GPRS
+
+      Serial.println(F("Enabling GPS..."));
+      fona.enableGPS(true);
+      delay(4000);
+      
+    //----------------------------------------------------------//
+          //get gps location        
+          
+          float latitude, longitude;//variables to hold initial GPS readings
+          boolean gps_success = fona.getGPS(&latitude, &longitude);
+          if (gps_success) {
+          
+
+            //send sms
+            char message[141];  
+            char LAT1[10];//string of lat and long unparsed & overflowing bound
+            char LAT[10];
+            char LONG[10];
+            dtostrf(latitude, 10, 7, LAT1); //gathering GPS data in a format that can be sent
+            dtostrf(longitude, 10, 7, LONG);
+            
+            //initialize desired array from unparsed array
+            for(int i = 0; i < 9; i++) {
+            LAT[i] = LAT1[i];
+            }
+            LAT[9] = '\0';//truncate array at last desired value
+            sprintf(message, "Latitude : %s ; Longitude : %s", LAT, LONG);
+            
+            char sendto[13] = "+33776345512"; //put the desired destination phone number for sms here
+
+            fona.sendSMS(sendto, message) ; //sends the message via SMS}
+
+            // Check for network, then GPRS 
+            Serial.println(F("Checking for Cell network..."));
+            if (fona.getNetworkStatus() == 1) {
+                // network & GPRS? Great! Print out the GSM location to compare
+                float latitude, longitude;
+                boolean gsmloc_success = fona.getGSMLoc(&latitude, &longitude);
+                if (gsmloc_success) {
+                  Serial.print("GSMLoc lat:");
+                  Serial.println(latitude, 6);
+                  Serial.print("GSMLoc long:");
+                  Serial.println(longitude, 6);          
+                  //send sms
+                    
+                  char message[141];  
+                  char LAT1[10];//string of lat and long unparsed & overflowing bound
+                  char LAT[10];
+                  char LONG[10];
+                  dtostrf(latitude, 10, 7, LAT1); //gathering GPS data in a format that can be sent
+                  dtostrf(longitude, 10, 7, LONG);
+                  
+                  //initialize desired array from unparsed array
+                  for(int i = 0; i < 9; i++) {
+                  LAT[i] = LAT1[i];
+                  }
+                  LAT[9] = '\0';//truncate array at last desired value
+                  sprintf(message,"Latitude : %s ; Longitude : %s", LAT, LONG);
+                  
+                  Serial.println(LAT);Serial.println(LAT1);Serial.println(LONG);
+                  Serial.println(message) ;    //prints the message in the serial monitor before sending
+
+                  char sendto[13] = "+33776345512"; //put the desired destination phone number for sms here
+
+                  fona.sendSMS(sendto, message); //sends the message via SMS}
+                } 
+            }
+          }
+    
+}
+void loop() {
+ 
+}
